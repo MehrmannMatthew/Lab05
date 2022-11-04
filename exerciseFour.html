@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+    <link href="style.css" 
+    rel="stylesheet" 
+    type="text/css"/> 
+    <script type="text/javascript" src="functions.js"></script> 
+</head>
+<header id="pageHeader">Excercise 4</header>
+<article> 
+<div>
+    <p id="paragraph" class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<form>
+    <label for="borderColor">Select Border Color: </label><br>
+    <input class="css" type="color" id="borderColor" value="#D4E4F7" onchange="return ChangeBorderColor()">
+    <br><br>
+    <label for="BorderSize">Change Border Size: </label><br>
+    <input class="css" type="number" id="borderSize" value="0" min="0" max="10" onchange="return ChangeBorderWidth()">
+    <br><br>
+    <label for="backgroundColor">Change Background Color: </label><br>
+    <input class="css" type="color" id="backgroundColor" value="#D4E4F7" onchange="return ChangeBackgroundColor()">
+    <br><br>
+    <input class="css" type="reset" id="reset" onclick="return ResetCSS()">
+    <br><br>
+</form>
+</article>
+
+<nav id="mainNav">
+    <div class="home">
+        <a href="index.html"><button class="homebtn" id="home">Home</button></a>
+        <br>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">EECS 448</button>
+        <div class="dropdown-content">
+        <a href="exerciseOne.html">Exercise 1</a>
+        <a href="exerciseTwo.html">Exercise 2</a>
+        <a href="exerciseThree.html">Exercise 3</a>
+        <a href="exerciseFour.html">Exercise 4</a>
+        </div>
+    </div> 
+</nav>
+
+<footer id="pageFooter"><a href="https://www.linkedin.com/in/matt-mehrmann-80333a165/">LinkedIn</a></footer>
