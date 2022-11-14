@@ -3,16 +3,22 @@
     <link href="style.css" 
     rel="stylesheet" 
     type="text/css"/> 
-    <script type="text/javascript" src="functions.js"></script> 
 </head>
-
-<title>Matthew Mehrmann</title>
-
-<body>
-
-<header id="pageHeader">Welcome to my Webpage</header>
-<article id="mainArticle"> 
-
+<header id="pageHeader">Excercise 1</header>
+<article> 
+    <table class=multTable border=1>
+        <?php 
+        for($y = 0; $y <= 100; $y++){
+            echo "<tr>";
+            for($x = 0; $x <=100; $x++){
+                echo "<td" . ($y == $x ? " class=square>" : ">");
+                echo ($y == 0 ? ($x == 0 ? " " : $x) : ($x == 0 ? $y : $y*$x));
+                echo "</td>";
+            }
+            echo "</tr>";
+        }
+        ?>
+    </table>
 </article>
 
 <nav id="mainNav">
@@ -30,6 +36,3 @@
     </div> 
 </nav>
 <footer id="pageFooter"><a href="https://www.linkedin.com/in/matt-mehrmann-80333a165/">LinkedIn</a></footer>
-
-</body>
-
