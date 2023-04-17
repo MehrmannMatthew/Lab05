@@ -1,0 +1,119 @@
+<!doctype html>
+<head>
+    <link href="style.css" 
+    rel="stylesheet" 
+    type="text/css"/> 
+    <script type="text/javascript" src="formChecker.js"></script>
+</head>
+<header id="pageHeader">Excercise 3</header>
+<article> 
+    <div>
+        <form action="login.php" method="post">
+        <h3 style="text-align: center;">Best Peripherals for Programmers 2022</h3>
+        <div id="forSaleDiv">
+            <table class="forSale">
+                <tr>
+                    <th class="Sales">Keyboard</th>
+                </tr>
+                <tr>
+                    <td><img class="imgCenter" src="forSale/keyboard.png"></td> 
+                </tr>
+                <tr>
+                    <td class="center"><b>Keychron K8 Tenkeyless Wireless Mechanical Keyboard for Mac</b></td> 
+                </tr>
+                <tr>
+                    <td class="center"><b>$80.00</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="keyboard">Quantity: </label>
+                        <input class="quantity" type="number" id="keyboard" name="keyboard" min="0" value=0 onchange="return validate()" action="login.php">
+                        <input type="button" name="keyboardAdd" onclick="return addToCart('keyboard')" value="Add to Cart">
+                    </td>
+                </tr>
+            </table>
+            <table class="forSale">
+                <tr>
+                    <th>Mouse</th>
+                </tr>
+                <tr>
+                    <td><img class="imgCenter" src="forSale/mouse.png"></td>
+                </tr>
+                <tr>
+                    <td class="center"><b>Logitech MX Master 3S</b></td> 
+                </tr>
+                <tr>
+                    <td class="center"><b>$100.00</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mouse">Quantity: </label>
+                        <input class="quantity" type="number" id="mouse" name="mouse" min="0" value="0" onchange="return validate()" action="login.php">
+                        <input type="button" name="mouseAdd" onclick="return addToCart('mouse')" value="Add to Cart">
+                    </td>
+                </tr>
+            </table>
+            <table class="forSale">
+                <tr>
+                    <th>Headphones</th>
+                </tr>
+                <tr>
+                    <td><img class="imgCenter" src="forSale/headphones.png"></td>
+                </tr>
+                <tr>
+                    <td class="center"><b>Sony WH-1000XM4</b></td> 
+                </tr>
+                <tr>
+                    <td class="center"><b>$350.00</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="headphones">Quantity: </label>
+                        <input class="quantity" type="number" id="headphones" name="headphones" min="0" value="0" onchange="return validate()" action="login.php">
+                        <input type="button" name="headphonesAdd" onclick="return addToCart('headphones')" value="Add to Cart">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Please Select a Shipping Speed</h3>
+            <input type="radio" id="ss_1" name="ss" value="0.00" onchange="return validate()">
+            <label for="ss_1">Free 7 Day</label><br>
+            <input type="radio" id="ss_2" name="ss" value="50.00" onchange="return validate()">
+            <label for="ss_2">$50.00 Overnight</label><br>
+            <input type="radio" id="ss_3" name="ss" value="5.00" onchange="return validate()">
+            <label for="ss_3">$5.00 Three Day</label><br>
+            <h3>Please Login</h3>
+            <label class="bold" for="email">Email: </label>
+            <input type="email" id="email" name="email" data-lpignore="true" onchange="return validate()">
+            <br><br>
+            <label class="bold" for="password">Password: </label>
+            <input type="password" id="password" name="password" data-lpignore="true" onchange="return validate()">
+            <br><br>
+            <input class="submit" id="submit" type="submit" value="Submit">
+            <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div>
+</article>
+
+<nav id="mainNav">
+    <div class="home">
+        <a href="index.html"><button class="homebtn" id="home">Home</button></a>
+        <br>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">EECS 448</button>
+        <div class="dropdown-content">
+        <a href="exerciseOneLab06.php">Exercise 1</a>
+        <a href="exerciseTwoLab06.html">Exercise 2</a>
+        <a href="exerciseThreeLab06.html">Exercise 3</a> 
+        </div>
+    </div> 
+</nav>
+
+<footer id="pageFooter"><a href="https://www.linkedin.com/in/matt-mehrmann-80333a165/">LinkedIn</a></footer>
